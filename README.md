@@ -59,7 +59,3 @@ Android 수업에서 만든 실습 프로젝트를 모아 둔 저장소입니다
 3. Android SDK 위치가 필요하면 Android Studio가 `local.properties`를 새로 만들도록 합니다.
 
 `myapp`은 전체가 하나의 Gradle 프로젝트입니다. [모듈별 안내](projects/A/myapp/README.md)에서 각 실습 모듈로 이동할 수 있습니다.
-
-## 보관 기준
-
-소스 코드, `src/main` 리소스, Gradle 설정과 wrapper는 포함했습니다. 빌드 결과, IDE 캐시, PC별 `local.properties`, APK와 원본의 중복 ZIP은 제외했습니다. 업로드용 복사본이며 원래 프로젝트는 수정하지 않았습니다.
