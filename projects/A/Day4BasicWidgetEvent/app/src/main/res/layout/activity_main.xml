@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnHide"
+        android:onClick="onClick"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="숨기기"/>
+
+<!--위젯변수결합이 필요없음 -->
+    <Button
+        android:id="@+id/btnShow"
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나타내기"/>
+
+<!--  체크가 될을 때 확인, 체크 후 버튼 눌려서 확인 -->
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안드로이드"/>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크박스 검사!"/>
+
+    <Switch
+        android:id="@+id/sw1"
+        android:checked="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스위치 버튼"/>
+
+    <ToggleButton
+        android:id="@+id/tog1"
+        android:checked="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<!--라디오그룹은 과제에 있음-->
+</LinearLayout>

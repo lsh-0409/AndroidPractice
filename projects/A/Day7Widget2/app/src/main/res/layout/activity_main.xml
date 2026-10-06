@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+<!--  측정을 시작 또는 멈추는 이벤트를   -->
+    <Chronometer
+        android:gravity="center"
+        android:id="@+id/chrono1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:format="측정 시간: %s"
+        android:textSize="20dp"/>
+<!--  FrameLayout은 안쪽에 있는 모든위젯을 겹쳐서 표현  -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="start"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:visibility="gone"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stop"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="소요 시간: "/>
+<!--날짜가 바뀌면 그 정보를 알아야함-->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="단순 계산기"/>
+    <!--  아이디가 있어야 값을 읽어 올 수 있기 때문  -->
+    <!--  clickable부여 선택이 x -> false
+          clickable에 문제가 있어서 enable사용
+          enable은 활성화이기 때문에 false-->
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:id="@+id/edtInput"
+        android:gravity="right"
+        android:clickable="false"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:hint="0"/>
+
+    <GridLayout
+        android:layout_weight="6"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn7"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="/"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:text="*"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/btnDel"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="del."/>
+
+        <Button
+            android:id="@+id/btn0"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/btnDot"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:text="."/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:onClick="onClick"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:text="+"/>
+
+    </GridLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:id="@+id/btnCalc"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="="/>
+
+</LinearLayout>

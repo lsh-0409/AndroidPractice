@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--주의 EditText에 숫자를 전송하기 때문에 text속성을 사용하면
+    text인 String도 전송되기 때문에 주의-->
+    <EditText
+        android:id="@+id/edtShow"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="값 입력: "/>
+
+    <Button
+        android:id="@+id/btnThrow"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전송"/>
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회신"/>
+</LinearLayout>

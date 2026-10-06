@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--과제-->
+<!--  라디오버튼 처리
+0. rgroup의 위젯변수 결합
+1. 버튼 클릭 이벤트처리
+2. rgroup에게 누가 선택되었는지 묻는다.
+3. 2번의 결과를 얻음(get사용)
+4. 처리코드(Toast)
+-->
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자바"/>
+
+        <RadioButton
+            android:id="@+id/rdo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C++"/>
+
+        <RadioButton
+            android:id="@+id/rdo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C#"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:onClick="OnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"/>
+
+</LinearLayout>

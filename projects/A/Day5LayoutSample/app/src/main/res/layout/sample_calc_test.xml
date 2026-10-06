@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--과제-->
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <GridLayout
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:rowCount="2"
+        android:columnCount="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+
+        <!--  중요  -->
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="5"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="6"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="8"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="9"/>
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </GridLayout>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="+"/>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="-"/>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="*"/>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="/"/>
+
+    <Button
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="%"/>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="="/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:text="계산결과: "/>
+</LinearLayout>
+<!--각 레이아웃으로 묶어서 비율을 1:1:1로 주어도 좋음-->

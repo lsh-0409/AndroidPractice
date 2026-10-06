@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--  기준위젯 필요 그리고 아이디 필요  -->
+
+<!--  부모로 기준잡음 layout_  -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:text="기준위젯1"/>
+
+<!-- @id 리소스에 아이디를 읽어옴
+     @+id 리소스에 아이디를 추가
+  -->
+    <Button
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_above="@id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼4"/>
+
+    <!--  기준위젯을 기준으로  -->
+<!--  기준도 아니고 이벤트 처리도 아니니 아이디 x
+       크기가 다른 경우 aligntop등 사용 above 위에, below 아래에-->
+    <Button
+        android:layout_toRightOf="@id/btn1"
+        android:layout_alignTop="@id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼3"/>
+
+<!--  부모의 제일 위에 가운데  -->
+    <Button
+        android:id="@+id/btn2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기준위젯2"/>
+
+
+</RelativeLayout>

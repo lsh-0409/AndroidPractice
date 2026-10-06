@@ -1,0 +1,23 @@
+# Android Studio and Gradle generated files
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/build/
+**/captures/
+**/.cxx/
+**/.externalNativeBuild/
+**/local.properties
+*.iml
+
+# Build outputs and local secrets
+*.apk
+*.aab
+*.hprof
+*.jks
+*.keystore
+*.env
+
+# Duplicated archives and operating system files
+*.zip
+.DS_Store
+Thumbs.db
